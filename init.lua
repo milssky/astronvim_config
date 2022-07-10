@@ -77,7 +77,7 @@ local config = {
     init = {
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
-
+      {"ellisonleao/gruvbox.nvim"},
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
       -- {
@@ -168,7 +168,7 @@ local config = {
   lsp = {
     -- enable servers that you already have installed without lsp-installer
     servers = {
-      -- "pyright"
+      "pyright"
     },
     -- easily add or disable built in mappings added during LSP attaching
     mappings = {
