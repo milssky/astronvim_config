@@ -205,13 +205,13 @@ local config = {
       --     },
       --   },
       -- },
-      pylsp = {
-        settings = {
-          plugins = {
-            mypy = "enabled",
-          }
-        }
-      }
+--      pylsp = {
+--        settings = {
+--          plugins = {
+--            mypy = "enabled",
+--          }
+--        }
+--      }
     },
   },
 
