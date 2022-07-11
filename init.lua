@@ -78,11 +78,17 @@ local config = {
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
       {"ellisonleao/gruvbox.nvim"},
-      { -- Null-LS Use external formatters and linters
-        "jose-elias-alvarez/null-ls.nvim",
-        requires = {
-          "nvim-lua/plenary.nvim",
-      }},
+      {
+        "puremourning/vimspector",
+        config = function()
+          vim.g.vimspector_enable_mappings = "HUMAN"
+        end
+      },
+      -- { -- Null-LS Use external formatters and linters
+      --  "jose-elias-alvarez/null-ls.nvim",
+      --  requires = {
+      --    "nvim-lua/plenary.nvim",
+      --}},
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
       -- {
